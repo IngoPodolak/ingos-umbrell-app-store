@@ -19,6 +19,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/config:rw
       - ${APP_DATA_DIR}/data/output:/output:rw
+      - ${UMBREL_ROOT}/home/Network/192.168.0.4/ServerFolders:/server:rw
     environment:
       TZ: Europe/Berlin
       USER_ID: 1000
